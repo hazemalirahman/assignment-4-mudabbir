@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    
+
+</head>
+<body class="d-flex">
+    
+
+    <nav >
+
+        <aside class=" p-3 vh-100 overflow-auto ">
+
+            <div class="head-aside d-flex mb-4">
+
+                <div class="head-aside-right">
+                    
+                    <i class=" fa-solid fa-coins fa-1x    w-75  icon-coins-header p-3 link-light  rounded-4   align-self-center"></i>
+                </div>
+
+                <div class="head-aside-left">
+                    <h3 class="fw-bold fs-2 text-black">مدبّر</h3>
+                    <p class="">إدارة أموالك بذكاء</p>
+                </div>
+
+            </div>
+
+
+            <ul class="list-aside-home list-unstyled mb-0 pb-0 ">
+
+                <li class="d-flex home-active">
+                    <i class="fa-solid fa-house "></i>
+                    <span class=" w-100 text-primary">الصفحة الرئيسية</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class=" fa-solid fa-exchange-alt"></i>
+                    <span>المعاملات</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>الميزانيات</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <span>المدخرات</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-file-invoice   "></i>
+                    <span>الفواتير الشهرية</span>
+                </li>
+
+            </ul>
+
+
+
+            <ul class="list-aside-quick "> 
+
+                <li >
+                    <span>إجراءات سريعة</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-paper-plane   paper-plane-icon w-25 p-2 rounded-3"></i>
+                    <span> ارسال اموال</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-plus   plus-icon w-25 p-2 rounded-3"></i>
+                    <span> اضافه اموال</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-receipt   receipt-icon  w-25 p-2 rounded-3"></i>
+                    <span>  دفع فاتورة</span>
+                </li>
+
+                <li class="d-flex">
+                    <i class="fa-solid fa-chart-line  chart-line-icon  w-25 p-2 rounded-3"></i>
+                    <span> استثمار </span>
+                </li>
+
+            </ul>
+
+
+
+        </aside>
+
+    </nav>
+
+    <main class=" mx-auto w-75 ">
+
+
+        <header class="d-flex  p-3 mt-4   rounded-4    border shadow-sm   ">
+
+
+            <figure class="d-flex header-right">
+                
+                <i class=" fa-solid fa-coins fa-1x    w-25 mt-  icon-coins-header p-3 link-light  rounded-4   align-self-center"></i>
+                <figcaption class="text-end ms-3 fs-5  mb-1 w-100">
+                    <h3 class="text-dark fs-4 mb-2  ">مدبّر</h3>
+                    <p class="   ">إدارة أموالك بذكاء</p>
+                </figcaption>
+                <span class="fs-6  me-3  p-1 align-self-center  rounded-2  position-relative"> متصل</span>
+
+            </figure>
+
+             
+            <figure class="d-flex header-left me-auto   text-align-right  p-3 rounded-5 h-100 " >  
+
+                <svg  class="  h-100  p-2 rounded-3 mx-1  text-align-right "    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>        
+                <svg  class=" h-100  p-2 rounded-3 mx-1 ms-4 text-align-right "     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 64C306.7 64 296 74.7 296 88L296 97.7C214.6 109.3 152 179.4 152 264L152 278.5C152 316.2 142 353.2 123 385.8L101.1 423.2C97.8 429 96 435.5 96 442.2C96 463.1 112.9 480 133.8 480L506.2 480C527.1 480 544 463.1 544 442.2C544 435.5 542.2 428.9 538.9 423.2L517 385.7C498 353.1 488 316.1 488 278.4L488 263.9C488 179.3 425.4 109.2 344 97.6L344 87.9C344 74.6 333.3 63.9 320 63.9zM488.4 432L151.5 432L164.4 409.9C187.7 370 200 324.6 200 278.5L200 264C200 197.7 253.7 144 320 144C386.3 144 440 197.7 440 264L440 278.5C440 324.7 452.3 370 475.5 409.9L488.4 432zM252.1 528C262 556 288.7 576 320 576C351.3 576 378 556 387.9 528L252.1 528z"/></svg>
+
+                    
+                
+                    <figcaption class="text-end ms-4 mx-2 fs-5  mb-1">  
+                        <h3 class="text-dark  fs-6">سيف أسامة</h3>
+                        <p class="">حساب مميز</p>
+                    </figcaption>
+                    <img class="img-fluid rounded-circle  " src="./photos/avatar-1.jpg" alt="">
+                        
+            </figure>
+
+        </header>
+
+
+        <section class=" d-flex  mt-4">
+
+
+            <div class=" box-sec1    mx-2   p-3   rounded-4   border shadow-sm  "> 
+                <p class="mb-1">الرصيد الحالي</p>
+                <h3 class="fw-bolder text-black">8,450 جنية</h3>
+
+                <div class="d-flex arrow-up ">
+                        <i class="fa-solid fa-arrow-up ms-0 link-success"></i>
+                        <p class="ms-5  link-success">+2.5%</p>
+                </div>
+
+            </div>
+
+            <div class=" box-sec1   mx-2    p-3   rounded-4   border shadow-sm "> 
+                <p class="mb-1">الدخل</p>
+                <h3 class="fw-bolder text-black ">15,000 جنية</h3>
+
+                <div class="d-flex arrow-up ">
+                        <i class="fa-solid fa-arrow-up ms-0  link-success"></i>
+                        <p class="ms-5 link-success">+8.2%</p>
+                </div>
+
+            </div>
+
+            <div class=" box-sec1   mx-2    p-3   rounded-4   border shadow-sm  "> 
+                <p class="mb-1"> المصروفات</p>
+                <h3 class="fw-bolder text-black">10,000 جنية</h3>
+
+                <div class="d-flex ">
+                        <i class="fa-solid fa-arrow-down  ms-0" style="color: rgb(231, 14, 14);"></i>
+                        <p class="ms-5 text-danger">+2.5%</p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        
+
+        
+        <section class="boxs-main ">
+
+                <section class="box-sec1   w-100 mt-4 p-3  rounded-4   border   shadow-sm" >
+
+                    <h3 class=" fs-6 fw-bolder text-black mb-4">الأنشطة الحديثة</h3>
+
+                    <div class="user-plus  d-flex ms-0 me-0  border-start border-5 border-primary rounded-2 mb-3  me-1 ms-1">
+
+                        <div > <i class="fa-solid fa-user-plus    p-3 " style="color: rgb(20, 43, 197);"></i> </div>
+                        <div class="mt-2">
+                            <div class="d-flex   ">
+                                <h4 class="fs-6 ms-5">إنشاء حساب توفير جديد</h4>
+                                <span class="text-primary fs-6  opacity-75">حساب</span>
+                            </div>
+
+                            <p class="mt-0">تم إنشاء حساب توفير بنك الأهلي بنجاح</p>
+                            <p>منذ ساعة واحدة</p>
+
+                        </div>
+                    </div>
+
+                    <div class="credit-card  d-flex ms-0 me-0    border-start border-5 border-success rounded-2      ">
+
+                        <div class="d-flex" > <i class="fa-solid fa-credit-card  w-25 p-3 " style="color: rgb(27, 178, 34);"></i>
+                            <div class="mt-2 " >
+                                <div class="d-flex    ">
+                                    <h4 class="fs-6 ms-5">إضافة بطاقة جديدة</h4>
+                                    <span class="text-primary fs-6  opacity-75">بطاقة</span>
+                                </div>
+
+                                <p class="mt-0">تمت إضافة بطاقة Visa الجديدة ****2847</p>
+                                <p> منذ 3 ساعات </p>
+
+                            </div>
+                        </div>
+
+                    </div>  
+                    
+                    <button class="mt-3 mt-5 text-primary w-100  border-0 bg-body fw-bold ">عرض جميع الأنشطة (23)</button>
+
+                </section>
+
+
+
+                <section class="box-sec3   w-100 mt-4 p-3  rounded-4   border   shadow-sm">
+
+                
+                     <div class="d-flex  justify-content-between align-items-center mb-4  w-100">
+                        <h3 class=" fs-6 fw-bolder text-black   "> الفواتير الشهرية  </h3>
+                        <div class="d-flex  align-items-center   md  ">
+                            <span class="text-secondary  ">عرض الكل </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(125, 129, 145)" d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center ">
+                        <h3 class="fs-2 fw-bolder text-black">1920 جنية</h3>
+                        <p>إجمالي الفواتير الشهرية</p>
+                    </div>
+
+                    <div class=" d-flex ">
+
+                        <div class="p-2 text-center bg-secondary bg-opacity-10  rounded-4 w-50  ">
+
+                            <i class="fa-solid fa-wifi    text-primary bg-primary bg-opacity-10 p-2 w-auto  rounded-3" style="color: rgb(0, 28, 64);"></i>
+                            <p class="text-secondary mb-1">إنترنت</p>
+                            <h4 class="fw-bold fs-5">450 جنية</h4>
+                            <p class="text-danger">يستحق في 3 أيام</p>
+
+                        </div>
+
+                        <div class="p-2 text-center bg-secondary bg-opacity-10 rounded-4 w-50 mx-2 ">
+
+                            <i class="fa-solid fa-bolt  bg-warning  bg-opacity-25 p-2 w-auto  rounded-3" style="color: rgb(222, 126, 16);"></i>
+                            <p class="text-secondary mb-1">كهرباء</p>
+                            <h4 class="fw-bold fs-5">400 جنية</h4>
+                            <p class="text-warning">يستحق في 5 أيام</p>
+
+                        </div>
+
+                    </div>  
+                    
+                    <div class=" d-flex my-3">
+
+                        <div class="p-2 text-center bg-secondary bg-opacity-10 rounded-4 w-50  ">
+
+                            <i class="fa-solid fa-phone   bg-success  bg-opacity-25 p-2 w-auto  rounded-3" style="color: rgb(25, 165, 46);"></i>
+                            <p class="text-secondary mb-1">هاتف</p>
+                            <h4 class="fw-bold fs-5">290 جنية</h4>
+                            <p class="text-success opacity-75">يستحق في 10 أيام</p>
+
+                        </div>
+
+                        <div class="p-2 text-center bg-secondary bg-opacity-10 rounded-4 w-50 mx-2 ">
+
+                            <i class="fa-solid fa-tv      bg-danger bg-opacity-10 p-2 w-auto  rounded-3 " style="color: rgb(223, 61, 61);"></i>
+                            <p class="text-secondary mb-1">Netflix</p>
+                            <h4 class="fw-bold fs-5">780 جنية</h4>
+                            <p class="text-secondary ">يستحق في 15 أيام</p>
+
+                        </div>
+
+                    </div>  
+                    
+                    
+
+                </section>
+
+
+
+
+                <section class="box-sec2  w-100 mt-4 p-3  rounded-4   border   shadow-sm">
+
+                    <div class="d-flex  justify-content-between align-items-center mb-4  w-100">
+                        <h3 class=" fs-6 fw-bolder text-black mb-4">المعاملات الأخيرة  </h3>
+                        <div class="d-flex  align-items-center   md  ">
+                            <span class="text-secondary  ">عرض الكل </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(125, 129, 145)" d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                    </div>
+
+
+
+                    <table>
+
+                        <thead>
+
+                            <tr class="border-bottom border-secondary-subtle    d-flex justify-content-between  w-100 ">
+                                <th class="text-end ms-5  py-3 px-2  text-secondary  "   >المعاملة</th>
+                                <th  class="text-end  py-3 px-2   text-secondary "  >الفئة</th>
+                                <th  class="text-end  py-3 px-2   text-secondary  "  >التاريخ</th>
+                                <th  class="text-end  py-3 px-2   text-secondary  "  >الحالة</th>
+                                <th  class="text-end  py-3 px-2   text-secondary  "  >المبلغ</th>
+                            </tr>
+
+                            
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3  mb-4  ">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <img class="img-fluid rounded-circle w-25 " src="./photos/avatar-2.jpg" alt="">
+                                        <div class="cap-photo ">
+                                            <h6 class=" text-black">محمود النجار</h6>
+                                            <p >تحويل أموال</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-success-subtle  rounded-4    align-items-center   ">
+                                    <i class="fa-solid fa-arrow-down  translate-middle-x" style="color: rgb(71, 144, 63);"></i>
+                                    <p class="  mb-0">دخل</p>
+                                </td>
+
+                                <td >
+                                    <p>	١٤ أكتوبر ٢٠٢٥</p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1  ">
+                                    <p class="text-success   mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">+350 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <i class="fa-solid fa-utensils  bg-danger rounded-circle p-3   d-flex  justify-content-center" style="color: rgb(159, 45, 0);"></i>
+                                        <div class="cap-photo ">
+                                            <h6 >مطعم Meat moot</h6>
+                                            <p >دفع مطعم </p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-danger-subtle  rounded-4 py-1 px-1 align-items-center">
+                                    <i class="fa-solid fa-utensils" style="color: rgb(159, 45, 0);"></i>
+                                    <p class="text-danger-subtle mb-0">طعام</p>
+                                </td>
+
+                                <td >
+                                    <p>	14 أكتوبر ٢٠٢٥</p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-success  mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">	-2200 جنية </p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4 ">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <i class="fa-solid fa-cart-shopping bg-primary-subtle rounded-circle p-3   d-flex  justify-content-center" style="color: rgb(25, 60, 184);"></i>
+                                        <div class="cap-photo ">
+                                            <h6 >مشتريات Amazon </h6>
+                                            <p>تسوق إلكتروني </p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-primary-subtle  rounded-4 py-1 px-1 align-items-center">
+                                    <i class="fa-solid fa-cart-shopping" style="color: rgb(25, 60, 184);"></i>
+                                    <p class="text-primary  mb-0">تسوق</p>
+                                </td>
+
+                                <td >
+                                    <p>	13 أكتوبر، 2025 </p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-success  mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">-1250 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <img class="img-fluid rounded-circle w-25 " src="./photos/avatar-1.jpg" alt="">
+                                        <div class="cap-photo ">
+                                            <h6 >عمر المهدي </h6>
+                                            <p > دفع فاتورة مقسمة</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class=" users-bg  d-flex   rounded-4 py-1 px-1 align-items-center">
+                                    <i class="fa-solid fa-users" style="color: rgb(110, 17, 176);"></i>
+                                    <p class="mb-0">فاتورة مقسمة</p>
+                                </td>
+
+                                <td >
+                                    <p>	  	13 أكتوبر، 2025</p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-success  mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">-1400 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <img class="img-fluid rounded-circle w-25 " src="./photos/avatar-3.jpg" alt="">
+                                        <div class="cap-photo ">
+                                            <h6 >محمد عوض </h6>
+                                            <p > دفع عمل حر</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-success-subtle  rounded-4 py-1 px-1 align-items-center">
+                                    <i class="fa-solid fa-briefcase" style="color: rgb(1, 102, 48);"></i>
+                                    <p class="mb-0">عمل</p>
+                                </td>
+
+                                <td >
+                                    <p>	12 أكتوبر، 2025  </p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-success  mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">+2500 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <i class="fa-solid fa-gas-pump  bg-danger-subtle rounded-circle p-3  d-flex  justify-content-center" style="color: rgb(231, 0, 11);"></i>
+                                        <div class="cap-photo ">
+                                            <h6>محطة وقود Shell </h6>
+                                            <p > شراء وقود</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-danger-subtle  rounded-4 py-1 px-1  align-items-center">
+                                    <i class="fa-solid fa-car  " style="color: rgb(159, 7, 18);"></i>
+                                    <p class="text-danger mb-0">مواصلات</p>
+                                </td>
+
+                                <td >
+                                    <p>	  12 أكتوبر، 2025</p>
+                                </td>
+
+                                <td class="bg-warning-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-warning mb-0">معلق</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">	-700 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <i class="fa-solid fa-film   bg-primary-subtle rounded-circle p-3  d-flex  justify-content-center  " style="color: rgb(79, 57, 246);"></i>
+                                        <div class="cap-photo ">
+                                            <h6>اشتراك Netflix </h6>
+                                            <p > اشتراك شهري</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-primary-subtle  rounded-4 py-1 px-1 align-items-center">
+                                    <i class="fa-solid fa-tv" style="color: rgb(55, 42, 172);"></i>
+                                    <p class="text-primary-subtle  mb-0">ترفيه</p>
+                                </td>
+
+                                <td >
+                                    <p>		11 أكتوبر، 2025</p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-success mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">-780 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <i class="fa-solid fa-dumbbell bg-heart-puls rounded-circle p-3  d-flex  justify-content-center " style="color: rgb(0, 146, 184);"></i>
+                                        <div class="cap-photo ">
+                                            <h6 >نادي FitLife </h6>
+                                            <p >عضوية شهرية </p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="  bg-heart-puls  d-flex   rounded-4 py-1 px-1 align-items-center">
+                                    <i class="fa-solid fa-heart-pulse" style="color: rgb(0, 95, 120);"></i>
+                                    <p class="mb-0">صحه</p>
+                                </td>
+
+                                <td >
+                                    <p>		10 أكتوبر، 2025  </p>
+                                </td>
+
+                                <td class="bg-success-subtle      rounded-4 px-2 py-1">
+                                    <p class="text-success mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">-500 جنية</p>
+                                </td>
+
+                            </tr>
+
+                            <tr class="d-flex align-items-center justify-content-between  my-3 mb-4">   
+                                <td class="w-25">
+                                    <div class="    d-flex  align-items-center gap-1  ">
+                                        <i class="fa-solid fa-graduation-cap bg-success-subtle rounded-circle p-3   d-flex  justify-content-center" style="color: rgb(71, 144, 63);"></i>
+                                        <div class="cap-photo ">
+                                            <h6> كورس Jonas</h6>
+                                            <p > دورة تدريبية</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="d-flex bg-success-subtle  rounded-4 py-1 px-1  align-items-center">
+                                    <i class="fa-solid fa-book" style="color: rgb(0, 96, 69);"></i>
+                                    <p class="text-success mb-0">تعليم</p>
+                                </td>
+
+                                <td >
+                                    <p>	  	9 أكتوبر، 2025</p>
+                                </td>
+
+                                <td class="bg-success-subtle    rounded-4 px-2 py-1">
+                                    <p class="text-success mb-0">مكتمل</p>
+                                </td>
+
+
+                                <td>
+                                    <p class="text-success fw-bold">-250 جنية </p>
+                                </td>
+
+                            </tr>
+
+
+
+
+
+
+
+                        </tbody>
+
+
+
+
+                    </table>
+
+
+
+
+                </section>
+
+
+                <section class="box-sec4 w-100 mt-4 p-3  rounded-4   border   shadow-sm">
+
+                    <div class="d-flex  justify-content-between  mb-4  w-100">
+                        <h3 class=" fs-6 fw-bolder text-black   "> نظرة عامة على الميزانية   </h3>
+                        <div class="d-flex  align-items-center   md  ">
+                            <span class="text-secondary  ">عرض الكل </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(125, 129, 145)" d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                    </div>
+
+
+                    <div class="  blue-box  mb-4  bg-primary-subtle  rounded-4 p-2">
+                        <p class="text-primary">إجمالي الميزانية</p>
+                        <h3 class="text-primary-emphasis">10000 جنية</h3>
+                        <div class="text-start ">
+                            <p class="text-secondary  ms-5">المتبقي</p>
+                            <p class="text-success fs-4 ">1750 جنية</p>
+                        </div>
+                        <div class="d-flex justify-content-between object-fit-fill">
+                            <p>المستخدم: 8250 جنية</p>
+                            <p>82.5% </p>
+                        </div>
+                        <progress class="w-100  " value="82.5"  max="100%"></progress>
+                    </div>
+
+                    <div class="  blue-box  mb-4   rounded-4 p-2 border border-1 shadow-sm">
+                        
+                        <div class="d-flex">
+                            <i class="fa-solid fa-film  bg-danger-subtle  p-3  rounded-3 d-flex  justify-content-center " style="color: rgb(245, 73, 0);"></i>
+                            <div>
+                                <h3 class="text-primary-emphasis fs-6">  ترفيه </h3>
+                                <p class="text-secondary">الميزانية: 1500 جنية </p>
+                            </div>
+                        </div>
+
+                        <div class="text-start ">
+                            
+                            <p class=" fs-4 ">750 جنية  </p>
+                            <p class="text-success bg-success-subtle align-items-center   p-2 rounded-4">  متبقي 50%</p>
+                        </div>
+
+                        <div class="progress"  style="height: 8px;"> 
+                             <div class="progress-bar bg-orange" role="progressbar" aria-label="Segment two" style="width: 50%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="  blue-box  mb-4   rounded-4 p-2 border border-1 shadow-sm">
+                        
+                        <div class="d-flex">
+                            <i class="fa-solid fa-file-invoice-dollar  bg-danger-subtle p-3  rounded-3 d-flex  justify-content-center" style="color: rgb(231, 0, 11);"></i>
+                            <div>
+                                <h3 class="text-primary-emphasis fs-6">  فواتير </h3>
+                                <p class="text-secondary"> الميزانية: 2000 جنية</p>
+                            </div>
+                        </div>
+
+                        <div class="text-start ">
+                            
+                            <p class=" fs-4 ">2000 جنية  </p>
+                            <p class="text-danger-emphasis bg-danger-subtle align-items-center   p-2 rounded-4"> مستخدم 100%</p>
+                        </div>
+
+                        <div class="progress"  style="height: 8px;"> 
+                             <div class="progress-bar bg-danger" role="progressbar" aria-label="Segment two" style="width: 100%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="  blue-box  mb-4   rounded-4 p-2 border border-1 shadow-sm">
+                        
+                        <div class="d-flex">
+                            <i class="fa-solid fa-heart    bg-danger-subtle p-3  rounded-3 d-flex  justify-content-center" style="color: rgb(230, 0, 118);"></i>
+                            <div>
+                                <h3 class="text-primary-emphasis fs-6">  العناية الشخصية</h3>
+                                <p class="text-secondary"> الميزانية: 1500 جنية</p>
+                            </div>
+                        </div>
+
+                        <div class="text-start ">
+                            
+                            <p class=" fs-4 ">1200 جنية </p>
+                            <p class="text-warning-emphasis bg-warning-subtle align-items-center   p-2 rounded-4">متبقي 20%</p>
+                        </div>
+
+                        <div class="progress"  style="height: 8px;"> 
+                             <div class="progress-bar bg-pink" role="progressbar" aria-label="Segment two" style="width: 80%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="  blue-box  mb-4   rounded-4 p-2 border border-1 shadow-sm">
+                        
+                        <div class="d-flex">
+                            <i class="fa-solid fa-cart-shopping bg-success-subtle p-3  rounded-3 d-flex  justify-content-center" style="color: rgb(0, 166, 62);"></i>
+                            <div>
+                                <h3 class="text-primary-emphasis fs-6"> مستلزمات المنزل</h3>
+                                <p class="text-secondary"> الميزانية: 5000 جنية</p>
+                            </div>
+                        </div>
+
+                        <div class="text-start ">
+                            
+                            <p class=" fs-4 ">4300 جنية </p>
+                            <p class="text-success bg-success-subtle align-items-center   p-2 rounded-4">متبقي 14%</p>
+                        </div>
+
+                        <div class="progress"  style="height: 8px;"> 
+                             <div class="progress-bar bg-success" role="progressbar" aria-label="Segment two" style="width: 86%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </section>
+
+
+                
+                <section class="box-sec5   w-100 mt-4 p-3  rounded-4   border   shadow-sm">
+
+                
+                     <div class="d-flex  justify-content-between align-items-center mb-4  w-100">
+                        <h3 class=" fs-6 fw-bolder text-black   "> الدخل مقابل المصروفات   </h3>
+                        <div class="d-flex  align-items-center   md  ">
+                            <span class="text-secondary  "> التحليل  </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(125, 129, 145)" d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                    </div>
+
+
+                    <div class="text-center justify-content-evenly d-flex">
+                        <div class="income  position-relative d-flex">
+
+                            <p> الدخل</p>
+                        </div>
+                        <div class="outcome  position-relative d-flex ">
+
+                            <p>المصروفات</p>
+                        </div>
+                    </div>
+
+                   <div class="d-flex">
+                        <div class="css-chart-group  justify-content-around d-flex p-3 bg-secondary">
+                            <div class="d-flex css-charts-bars  position-relative">
+                                <div class="css-charts-bar-income  bg-success" style="height: 95px; " title="Income: $950" ></div>
+                                <di class="css-charts-bar-outcome bg-danger" style="height: 42px; " ></div>
+                            </div>
+                            <div class="labe1"> الأسبوع 1</div>
+                        </div>
+                   </div> 
+
+
+
+
+                </section>
+
+
+
+                <section class="box-sec6   w-100 mt-4 p-3  rounded-4   border   shadow-sm">
+
+                    <div class="d-flex  justify-content-between  mb-4  w-100">
+                        <h3 class=" fs-6 fw-bolder text-black   "> ملخص الحساب   </h3>
+                        <div class="d-flex  align-items-center   md  ">
+                            <span class="text-secondary  "> التفاصيل </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(125, 129, 145)" d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex justify-content-between bg-secondary-subtle rounded-2 p-2 mb-3">
+                        <i class="fa-solid fa-building-columns  bg-primary-subtle  p-3  h-25 rounded-3 d-flex  justify-content-center " style="color: rgb(21, 93, 252);"></i>
+                        <div class="mx-3">
+                            <h5>حساب جاري</h5>
+                            <p>بنك مصر [•••• 4532]</p>
+                        </div>
+                        <span>8,450 جنية</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between bg-secondary-subtle rounded-2 p-2 mb-3">
+                        <i class="fa-solid fa-piggy-bank   bg-success-subtle  p-3  h-25 rounded-3 d-flex  justify-content-center " style="color: rgb(0, 166, 62);"></i>
+                        <div class="mx-3">
+                            <h5> حساب التوفير</h5>
+                            <p>بنك مصر [•••• 8901]</p>
+                        </div>
+                        <span>297,540 جنية</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between bg-secondary-subtle rounded-2 p-2 mb-3 2">
+                        <i class="fa-solid fa-credit-card  users-bg  p-3  h-25 rounded-3 d-flex  justify-content-center " style="color: rgb(152, 16, 250);"></i>
+                        <div class="mx-3">
+                            <h5>بطاقة ائتمان </h5>
+                            <p>متاح: 1,850 جنية من 2,500 جنية</p>
+                        </div>
+                        <span>- 6,000 جنية</span>
+                    </div>
+
+                </section>
+
+
+
+                <section class="box-sec7 w-100    mt-4 p-3  rounded-4   border   shadow-sm">
+
+                    <div class="d-flex  justify-content-between  mb-4  w-100">
+                        <h3 class=" fs-6 fw-bolder text-black   ">   وسائل الدفع   </h3>
+                        <div class="d-flex  align-items-center   md  ">
+                            <span class="text-secondary  ">إدارة  </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(125, 129, 145)" d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+                        </div>
+                    </div>
+
+
+                    <div class="bg-primary position-relative w-100 h-25 rounded-4 p-3 mb-3">
+
+                        <div class="line-1 d-flex   justify-content-between align-content-center">
+                            <div class="line-1-right bg-white bg-opacity-75 rounded-3 w-25"></div>
+                            <div class="line-1-left fw-bold bg-white text-primary p-2 rounded-3">VISA </div>
+                        </div>
+
+                        <p class="fs-1 fw-bold text-white mt-3">....  ....  ....</p>
+
+                        <p class="fs-5 fw-bold text-white">4532</p>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="w-50 text-white fs-6">حامل البطاقة سيف اسامة</p>
+                            <p class="w-25 text-white fs-6">تنتهي 12/26</p>
+
+                        </div>
+                    </div>
+
+                    <div class="bg-danger position-relative w-100 h-25 rounded-4 p-3 mb-3">
+
+                        <div class="line-1 d-flex   justify-content-between align-content-center">
+                            <div class="line-1-right bg-white bg-opacity-75 rounded-3 w-25"></div>
+                            
+                        </div>
+
+                        <p class="fs-1 fw-bold text-white mt-3">....  ....  ....</p>
+
+                        <p class="fs-5 fw-bold text-white">4532</p>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="w-50 text-white fs-6">حامل البطاقة سيف اسامة</p>
+                            <p class="w-25 text-white fs-6">تنتهي 12/26</p>
+
+                        </div>
+                    </div>
+
+                    <div class="bg-primary position-relative w-100 h-25 rounded-4 p-3">
+
+                        <div class="line-1 d-flex   justify-content-between align-content-center">
+                            <div class="line-1-right bg-white bg-opacity-75 rounded-3 w-25"></div>
+                            <i class="fa-brands fa-paypal fs-5" style="color: rgb(241, 242, 245);"></i>
+                        </div>
+
+                        <p class="fs-1 fw-bold text-white mt-3">....  ....  ....</p>
+
+                        <p class="fs-5 fw-bold text-white">حساب Paypal</p>
+
+                        <div class="d-flex justify-content-between">
+                            <p class="w-50 text-white fs-6">  seif@eample.com الايميل</p>
+                            <p class="w-25 text-white fs-6"> الحاله موثق</p>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+
+
+
+
+
+                    
+
+
+
+
+                </section>
+
+
+
+
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
